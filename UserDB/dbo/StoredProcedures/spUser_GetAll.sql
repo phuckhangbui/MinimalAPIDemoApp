@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[sqUser_GetAll]
+﻿CREATE PROCEDURE [dbo].[spUser_GetAll]
 AS
 begin
 	Select Id, FirstName, LastName 

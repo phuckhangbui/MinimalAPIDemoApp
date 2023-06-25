@@ -35,7 +35,7 @@ namespace DataAccess.Data
         public Task UpdateUser(UserModel user) =>
             _db.SaveData("dbo.spUser_Update", user);
 
-        public Task DeleteUser(UserModel user) =>
-            _db.SaveData("dbo.spUser_Delete", user);
+        public Task DeleteUser(int id) =>
+            _db.SaveData("dbo.spUser_Delete", new { Id = id });
     }
 }
